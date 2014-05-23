@@ -3,6 +3,7 @@ This code book explain the following
   2.	Data for the project
   3.	Variables extracted from the source for analysis as per the specification of the project
   4.	Cleanup operation performed on the extracted data set to refine the output
+    
     1. Source for the data is https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
       This zip file contains data on experiments conducted as a part of the project for human activity recognition by           smart phones.
       Details on the data available in this data set are given in the README file included in the zip file.
