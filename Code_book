@@ -67,6 +67,10 @@ This code book explain the following
 		        •	Character ‘-‘ removed
 		        •	‘mean’ and ‘std’ strings modified as ‘Mean’ and ‘Std’
       		b.	Column headers added to the variable values data set
-      		c.	Subjects conducting the experiments and the type of activity included to each operations to make the resulting            data set clean and self sustaining
+      		c.	Subjects conducting the experiments and the type of activity included to each operations
+      			to make the resulting data set clean and self sustaining
   5.	Output dataset
-	    Output from this project is the mean value for each of the ‘mean’ and ‘std’ variables (66 variables) grouped by the       subject performing the experiment and the activity. With 30 subjects in test and training sets and 6 category of          activities total rows in the tiny data set is 180 (30*60). 
+	    Output from this project is the mean value for each of the ‘mean’ and ‘std’ variables (66 variables)
+	    grouped by the subject performing the experiment and the activity.
+	    With 30 subjects in test and training sets and 6 category of activities
+	    total rows in the tiny data set is 180 (30*60). 
