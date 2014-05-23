@@ -5,16 +5,16 @@ This document explains the location of the input data sets and the sequence of o
 Following files unzipped from the downloaded Zip file and loaded 
 
 'features.txt':		          in current working directory.
-'activity_labels.txt': 	    in current working directory.
-'train/X_train.txt': 	      in train directory under working directory
-'train/y_train.txt': 	      in train directory under working directory
-'train/subject_train.txt’:  in train directory under working directory
-'test/X_test.txt':	        in test directory under working directory
-'test/y_test.txt': 	        in test directory under working directory
-‘test/subject_test.txt’: 	in test directory under working directory
-
+'activity_labels.txt': 	          in current working directory.
+'train/X_train.txt': 	          in train directory under working directory
+'train/y_train.txt': 	          in train directory under working directory
+'train/subject_train.txt’:        in train directory under working directory
+'test/X_test.txt':	          in test directory under working directory
+'test/y_test.txt': 	          in test directory under working directory
+‘test/subject_test.txt’: 	    in test directory under working directory
+   
 Script ‘run_analyzis.R’ description:
-1.	‘Data.table’ package requested and loaded for handling data tables
+1.	‘Data.table’ package requested and loaded for handling data tables          
 2.	‘reshape2’ package loaded for ‘d-casting’ of melted table data table
 3.	Read all  8 required files in the R environment
 4.	From the feature labels list select all required std() and mean() variable column numbers in the data set as ‘reqfea1’     and ‘reqfea2’
