@@ -5,7 +5,8 @@ This code book explain the following
   4.	Cleanup operation performed on the extracted data set to refine the output
     
     1. Source for the data is https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-      This zip file contains data on experiments conducted as a part of the project for human activity recognition by           smart phones.
+      This zip file contains data on experiments conducted as a part of the project for human activity recognition by
+      smart phones.
       Details on the data available in this data set are given in the README file included in the zip file.
     2. Data for the project:
       This project utilizes the following data sets available in the zip file
@@ -20,8 +21,8 @@ This code book explain the following
           b.	'test/y_test.txt': Training labels giving names of the features
           c.	‘test/subject_test.txt’: Information on individuals performing testing experiments
     3. Variables extracted from the source
-        From ‘X_test’ and X_train’ data sets variables that are pertaining to the measurements of Mean and Standard               deviation are selected for this project.
-        There are 33 variables in each category as listed below:
+        From ‘X_test’ and X_train’ data sets variables that are pertaining to the measurements of Mean and Standard
+        deviation are selected for this project. There are 33 variables in each category as listed below:
 
 
         Col.No	Features Mean	        Col.No  Features std
