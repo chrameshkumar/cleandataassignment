@@ -24,7 +24,7 @@ This code book explain the following
 
 
         Col.No	Features Mean	        Col.No  Features std
-1      	1 tBodyAcc-mean()-X	          4 tBodyAcc-std()-X
+      	1 tBodyAcc-mean()-X	          4 tBodyAcc-std()-X
     	  2 tBodyAcc-mean()-Y	          5 tBodyAcc-std()-Y
       	3 tBodyAcc-mean()-Z	          6 tBodyAcc-std()-Z
       	41 tGravityAcc-mean()-X	      44 tGravityAcc-std()-X
@@ -61,11 +61,11 @@ This code book explain the following
 
   4.	Clean up operations:
 	Following operations performed to get the clean data set and the details are in the ‘README’ document  
-      a.	labels for 66 selected variables cleaned as
-          •	Common string ‘Body’ and ‘()’ removed from the string
-          •	Character ‘-‘ removed
-          •	‘mean’ and ‘std’ strings modified as ‘Mean’ and ‘Std’
-      b.	Column headers added to the variable values data set
-      c.	Subjects conducting the experiments and the type of activity included to each operations to make the resulting            data set clean and self sustaining
+      		a.	labels for 66 selected variables cleaned as
+          		•	Common string ‘Body’ and ‘()’ removed from the string
+		        •	Character ‘-‘ removed
+		        •	‘mean’ and ‘std’ strings modified as ‘Mean’ and ‘Std’
+      		b.	Column headers added to the variable values data set
+      		c.	Subjects conducting the experiments and the type of activity included to each operations to make the resulting            data set clean and self sustaining
   5.	Output dataset
 	    Output from this project is the mean value for each of the ‘mean’ and ‘std’ variables (66 variables) grouped by the       subject performing the experiment and the activity. With 30 subjects in test and training sets and 6 category of          activities total rows in the tiny data set is 180 (30*60). 
