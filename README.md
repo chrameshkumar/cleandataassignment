@@ -11,7 +11,7 @@ Following files unzipped from the downloaded Zip file and loaded
 'train/subject_train.txt’:  in train directory under working directory
 'test/X_test.txt':	        in test directory under working directory
 'test/y_test.txt': 	        in test directory under working directory
-‘test/subject_test.t        xt’: 	in test directory under working directory
+‘test/subject_test.txt’: 	in test directory under working directory
 
 Script ‘run_analyzis.R’ description:
 1.	‘Data.table’ package requested and loaded for handling data tables
