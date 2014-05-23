@@ -14,13 +14,13 @@ Following files unzipped from the downloaded Zip file and loaded
 ‘test/subject_test.txt’: 	    in test directory under working directory
    
 Script ‘run_analyzis.R’ description:
-1.	‘Data.table’ package requested and loaded for handling data tables          
-2.	‘reshape2’ package loaded for ‘d-casting’ of melted table data table
-3.	Read all  8 required files in the R environment
-4.	From the feature labels list select all required std() and mean() variable column numbers in the data set as ‘reqfea1’     and ‘reqfea2’
-5.	Combine these two vectors as single vector  ‘reqfeatures’ that has 66 entries ( 33 from each)
-6.	Using ‘reqfeatures’ select the required feature labels from total features list
-7.	Required feature labels are cleaned to create meaningful short labels:
+   1.	‘Data.table’ package requested and loaded for handling data tables          
+   2.	‘reshape2’ package loaded for ‘d-casting’ of melted table data table
+   3.	Read all  8 required files in the R environment
+   4.	From the feature labels list select all required std() and mean() variable column numbers in the data set as              ‘reqfea1’     and ‘reqfea2’
+   5.	Combine these two vectors as single vector  ‘reqfeatures’ that has 66 entries ( 33 from each)
+   6.	Using ‘reqfeatures’ select the required feature labels from total features list
+   7.	Required feature labels are cleaned to create meaningful short labels:
       a.	Common string ‘Body’ and ‘()’ are removed 
       b.	All ‘_’ and ‘-‘ characters removed
       c.	The strings ‘mean’ and ‘std’ modified as ‘Mean’ and  ‘Std’ and ‘_’ added before ‘S’ and ‘M’ 
@@ -49,12 +49,12 @@ Script ‘run_analyzis.R’ description:
 [61] "fBodyAccJerkMag_Mean"  "fBodyAccJerkMag_Std"   "fBodyGyroMag_Mean"    
 [64] "fBodyGyroMag_Std"      "fBodyGyroJerkMag_Mean" fBodyGyroJerkMag_Std" 
 
-8.	Select required features using the selected labels for test and train files separately
-9.	Refined column labels incorporated to selected test and train data sets
-10.	Activity name and identity of person conducting the experiment included to each row in selected test and train data       sets using the ‘cbind’ function
-11.	Selected test and train data sets combined with ‘rbind’ and converted into a data table, named ‘clean_set’
-12.	‘clean_set’ data table is melted with ‘Subject’ and ‘act_desc’ as id variables and rest of the columns as measure         variables
-13.	Melted data set is recast by using both id variables against all measure variables, using mean as the aggregate           function
-14.	Resulting Clean_tiny_set’ is the desired tiny table that contains
+   8.	Select required features using the selected labels for test and train files separately
+   9.	Refined column labels incorporated to selected test and train data sets
+   10.	Activity name and identity of person conducting the experiment included to each row in selected test and train               data sets using the ‘cbind’ function
+   11.	Selected test and train data sets combined with ‘rbind’ and converted into a data table, named ‘clean_set’
+   12.	‘clean_set’ data table is melted with ‘Subject’ and ‘act_desc’ as id variables and rest of the columns as measure            variables
+   13.	Melted data set is recast by using both id variables against all measure variables, using mean as the aggregate           function
+   14.	Resulting Clean_tiny_set’ is the desired tiny table that contains
       a.	180 rows of mean values for each experiment (30 subject and 6 activities-> 30*6 = 180)
       b.	68 column of variables ( Two id variables and 66 measure variables of mean and sd) 
