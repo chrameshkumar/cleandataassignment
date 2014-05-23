@@ -1,0 +1,71 @@
+This code book explain the following
+  1.	Data source 
+  2.	Data for the project
+  3.	Variables extracted from the source for analysis as per the specification of the project
+  4.	Cleanup operation performed on the extracted data set to refine the output
+    1. Source for the data is https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+      This zip file contains data on experiments conducted as a part of the project for human activity recognition by           smart phones.
+      Details on the data available in this data set are given in the README file included in the zip file.
+    2. Data for the project:
+      This project utilizes the following data sets available in the zip file
+          a.	- 'features.txt': List of all features.
+          b.	- 'activity_labels.txt': Links the class labels with their activity name.
+          c.	Training set
+          a.	'train/X_train.txt': Training set giving values for all features tested.
+          b.	'train/y_train.txt': Training labels giving names of the features
+          c.	'train/subject_train/.txt’: Information on individuals performing training experiments
+          d.	Testing set
+          a.	'test/X_test.txt': Training set giving values for all features tested.
+          b.	'test/y_test.txt': Training labels giving names of the features
+          c.	‘test/subject_test.txt’: Information on individuals performing testing experiments
+    3. Variables extracted from the source
+        From ‘X_test’ and X_train’ data sets variables that are pertaining to the measurements of Mean and Standard               deviation are selected for this project.
+        There are 33 variables in each category as listed below:
+
+
+        Col.No	Features Mean	        Col.No  Features std
+1      	1 tBodyAcc-mean()-X	          4 tBodyAcc-std()-X
+    	  2 tBodyAcc-mean()-Y	          5 tBodyAcc-std()-Y
+      	3 tBodyAcc-mean()-Z	          6 tBodyAcc-std()-Z
+      	41 tGravityAcc-mean()-X	      44 tGravityAcc-std()-X
+      	42 tGravityAcc-mean()-Y	      45 tGravityAcc-std()-Y
+      	43 tGravityAcc-mean()-Z	      46 tGravityAcc-std()-Z
+      	81 tBodyAccJerk-mean()-X	    84 tBodyAccJerk-std()-X
+      	82 tBodyAccJerk-mean()-Y	    85 tBodyAccJerk-std()-Y
+      	83 tBodyAccJerk-mean()-Z	    86 tBodyAccJerk-std()-Z
+      	121 tBodyGyro-mean()-X	      124 tBodyGyro-std()-X
+      	122 tBodyGyro-mean()-Y	      125 tBodyGyro-std()-Y
+      	123 tBodyGyro-mean()-Z	      126 tBodyGyro-std()-Z
+      	161 tBodyGyroJerk-mean()-X	  164 tBodyGyroJerk-std()-X
+      	162 tBodyGyroJerk-mean()-Y	  165 tBodyGyroJerk-std()-Y
+      	163 tBodyGyroJerk-mean()-Z	  166 tBodyGyroJerk-std()-Z
+      	201 tBodyAccMag-mean()	      202 tBodyAccMag-std()
+      	214 tGravityAccMag-mean()	    215 tGravityAccMag-std()
+      	227 tBodyAccJerkMag-mean()	  228 tBodyAccJerkMag-std()
+      	240 tBodyGyroMag-mean()	      241 tBodyGyroMag-std()
+      	253 tBodyGyroJerkMag-mean()	  254 tBodyGyroJerkMag-std()
+      	266 fBodyAcc-mean()-X	        269 fBodyAcc-std()-X
+      	267 fBodyAcc-mean()-Y	        270 fBodyAcc-std()-Y
+      	268 fBodyAcc-mean()-Z	        271 fBodyAcc-std()-Z
+      	345 fBodyAccJerk-mean()-X	    348 fBodyAccJerk-std()-X
+      	346 fBodyAccJerk-mean()-Y	    349 fBodyAccJerk-std()-Y
+      	347 fBodyAccJerk-mean()-Z	    350 fBodyAccJerk-std()-Z
+      	424 fBodyGyro-mean()-X	      427 fBodyGyro-std()-X
+      	425 fBodyGyro-mean()-Y	      428 fBodyGyro-std()-Y
+      	426 fBodyGyro-mean()-Z	      429 fBodyGyro-std()-Z
+      	503 fBodyAccMag-mean()	      504 fBodyAccMag-std()
+      	516 fBodyBodyAccJerkMag-mean()	517 fBodyBodyAccJerkMag-std()
+      	529 fBodyBodyGyroMag-mean()	  530 fBodyBodyGyroMag-std()
+      	542 fBodyBodyGyroJerkMag-mean()	543	odyBodyGyroJerkMag-std()
+
+
+  4.	Clean up operations:
+	Following operations performed to get the clean data set and the details are in the ‘README’ document  
+      a.	labels for 66 selected variables cleaned as
+          •	Common string ‘Body’ and ‘()’ removed from the string
+          •	Character ‘-‘ removed
+          •	‘mean’ and ‘std’ strings modified as ‘Mean’ and ‘Std’
+      b.	Column headers added to the variable values data set
+      c.	Subjects conducting the experiments and the type of activity included to each operations to make the resulting            data set clean and self sustaining
+  5.	Output dataset
+	    Output from this project is the mean value for each of the ‘mean’ and ‘std’ variables (66 variables) grouped by the       subject performing the experiment and the activity. With 30 subjects in test and training sets and 6 category of          activities total rows in the tiny data set is 180 (30*60). 
