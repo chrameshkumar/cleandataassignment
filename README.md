@@ -57,4 +57,4 @@ Script ‘run_analyzis.R’ description:
 13.	Melted data set is recast by using both id variables against all measure variables, using mean as the aggregate           function
 14.	Resulting Clean_tiny_set’ is the desired tiny table that contains
       a.	180 rows of mean values for each experiment (30 subject and 6 activities-> 30*6 = 180)
-      b.	68 column of variables ( Two id variables and 66 measure variables of mean and sd)
+      b.	68 column of variables ( Two id variables and 66 measure variables of mean and sd) 
